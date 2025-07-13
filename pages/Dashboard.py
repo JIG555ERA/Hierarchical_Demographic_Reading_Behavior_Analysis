@@ -34,7 +34,7 @@ st.title(":green[Hierarchical Demographic Reading Behavior Analysis]")
 
 st.markdown("---")
 
-excel_path='C:/Users/info/OneDrive/Documents/literacy_classification.xlsx'
+excel_path='datasets/literacy_classification.xlsx'
 # excel_link='https://1drv.ms/x/c/1d5d70a3020880fe/ETdnjLXmJ8FNnR-fNpSMtsIBb0ClDAhziZZz-T-FnXBHgg?e=NtCcMi'
 sheets = ['population_table','population_table01','literacy_rate']
 
