@@ -17,7 +17,7 @@ def logout():
     })
     st.switch_page("Auth.py")
 
-if not st.session_state.authenticated:
+if not st.session_state.get("authenticated", False):
     # st.switch_page('Auth.py')
     st.warning('**⚠️ :red[Unauthorised Access]**')
     st.switch_page('Auth.py')
@@ -25,7 +25,7 @@ if not st.session_state.authenticated:
 
 # ====== SIDEBAR CONTEXT ======
 # LogIN status
-st.sidebar.success(f"✅ Logged in as: {st.session_state.email}")
+st.sidebar.success(f"✅ Logged in as: {st.session_state.get('email', 'Unknown')}")
 # Logout button
 st.sidebar.button("🔓 Logout", on_click=logout)
 
